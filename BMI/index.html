@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box" id="box">
+      <h1>BMI</h1>
+
+      <div class="weight">
+        <h3>Weight:</h3>
+        <input type="number" class="wt" value="0" />
+        <select class="unit1">
+          <option value="kg">Kg</option>
+          <option value="lb">Pounds</option>
+        </select>
+      </div>
+
+      <div class="height">
+        <h3>Height:</h3>
+        <input type="number" class="ht" value="0" />
+        <select class="unit2">
+          <option value="cm">Centimeters</option>
+          <option value="m">Meters</option>
+          <option value="f">Feet</option>
+          <option value="i">Inches</option>
+        </select>
+      </div>
+
+      <div class="computation">
+        <div class="result"> <h2 id="result">0</h2> </div>
+        <div class="butWord">
+        <div> <button type="submit" onclick="compute()">Compute</button> </div>
+        <div class="resultWord" id="resultWord"><p id="resultWordP">Normal</p></div>
+      </div>
+      </div>
+
+    </div>
+<section class="information">
+  <div class="uw">
+    <h5>Underweight</h5>
+    <p>16.0 - 18.5</p>
+  </div>
+
+  <div class="nrm">
+    <h5>Normal</h5>
+    <p>18.5 - 25.0</p>
+  </div>
+
+  <div class="ov">
+    <h5>Overweight</h5>
+    <p>25.0 - 40</p>
+  </div>
+</section>
+
+    <div class="footer">
+      <p class="copyright">&#169; Praveenraj R S</p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -27,6 +27,7 @@ h1{
     flex-direction: column;
     justify-content: space-around;
     align-items:center;
+    box-shadow: 0px 0px 20px 1px rgb(139, 255, 216);
 }
 
 input,select,button{

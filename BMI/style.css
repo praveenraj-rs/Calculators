@@ -52,7 +52,7 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 0px 20px 5px green;
+  box-shadow: 0px 0px 20px 5px #6bf8ff;
 }
 
 input,
@@ -164,4 +164,8 @@ input {
   font-size: 1rem;
   text-align: center;
   padding: 10px;
+}
+
+.reset{
+  width: min-content;
 }

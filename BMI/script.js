@@ -14,6 +14,13 @@ function compute() {
     document.getElementById("box").style.boxShadow="0px 0px 20px 2px blue";
     
   }
+  else if (bmiCal>=18.5 && bmiCal<=25)
+  {
+    document.getElementById("resultWordP").innerText="Normal";
+    document.getElementById("resultWord").style.width="150px";
+    document.getElementById("box").style.boxShadow="0px 0px 20px 5px green";
+  }
+
   else if (bmiCal>25 && bmiCal<50)
   {
     document.getElementById("resultWordP").innerText="Overweight";
@@ -46,10 +53,20 @@ function bmi(unit1, unit2, wt, ht) {
 
   const bm=(wt/ht**2)
 
-  if ((bm<=0 || bm>50)||(wt==0 && ht==0)){
+  if ((bm<=0 || bm>=50)||(wt==0 && ht==0)){
     alert("Enter Valid Parameters")
     return 0
   }
   
   else{ return bm}
+}
+
+function reset(){
+  document.querySelector(".unit1").value='kg';
+  document.querySelector(".unit2").value='cm';
+  document.querySelector(".wt").value=0;
+  document.querySelector(".ht").value=0;
+  document.getElementById("resultWordP").innerText="Health";
+  document.getElementById("result").innerText = 0;
+  document.getElementById("box").style.boxShadow="0px 0px 20px 5px #6bf8ff";
 }

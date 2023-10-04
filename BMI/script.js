@@ -68,5 +68,4 @@ function reset(){
   document.querySelector(".ht").value=0;
   document.getElementById("resultWordP").innerText="Health";
   document.getElementById("result").innerText = 0;
-  document.getElementById("box").style.boxShadow="0px 0px 20px 5px #6bf8ff";
 }

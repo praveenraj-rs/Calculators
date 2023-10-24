@@ -2,7 +2,7 @@ function compute() {
   let unit1 = document.querySelector(".unit1").value;
   let unit2 = document.querySelector(".unit2").value;
   let wt = parseInt(document.querySelector(".wt").value);
-  let ht = parseInt(document.querySelector(".ht").value);
+  let ht = document.querySelector(".ht").value;
   let bmiCal = bmi(unit1, unit2, wt, ht).toFixed(1);
   document.getElementById("result").innerText = bmiCal;
 
